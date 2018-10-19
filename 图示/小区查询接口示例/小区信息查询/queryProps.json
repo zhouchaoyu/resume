@@ -1,0 +1,272 @@
+请求方法：post
+请求路径： /EntranceGuard/plot/queryProps
+请求参数： 
+	必须参数： 
+	
+		format ： //请求参数的格式
+			list ： 格式是one 或者list数据包将封装在data数据域
+			
+			page ：格式是page 将封装在page数据域
+			
+			one  ： 精确搜索 数据将封装在data域返回匹配到的单条数据
+		
+		
+	
+	变量参数：	
+	pageNo：页码数   （当format 参数设定为page时必须）
+	pageRow：一页的数据长度  （当format 参数设定为page时必须）
+	city：  城市名：如苏州市
+	range： 地区名： 如昆山市
+	name： 小区名    
+	
+	
+		
+
+
+
+page 格式返回：
+
+{
+  "code": 1119,
+  "data": null,
+  "length": 0,
+  "page": {
+    "totalpage": 4,
+    "pageRow": 3,
+    "dataRow": 10,
+    "pageNo": 1,
+    "pagedata": [
+      {
+        "address": "萧林西路8号",
+        "province": "江苏省",
+        "create_time": "2018-03-26 16:20:51",
+        "name": "体验小区 ",
+        "county": "昆山市",
+        "Latitude": 120.6134033203,
+        "id": 90,
+        "describe": "<span style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\">寻居汇（苏州）网络科技有限公司通过两年的规划布局和发展，正式在江苏省市场经济国际化领先的昆山市核准成立。在这座富有活力的城市结合当地资源，开启“寻居汇”智慧城市创新之路。</span><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><span style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\">&nbsp;寻居汇（苏州）网络科技有限公司是由一批具有网络公司服务背景的网络精英组建而成，拥有专业的销售、设计、技术与服务团队，是一家专业从事智慧城市和智慧社区综合移动互联软件开发、互联社群商业模式整合等全方位服务的网络科技公司。</span><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><span style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\">&nbsp;我们全心致力于企事业单位、公共事业单位、物业、工厂、商家、百姓等智慧网络平台搭建和运营。行业涉及地方物业、政府机关、企事业单位，制造业、商企用户等等。</span><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><span style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\">&nbsp;我们以奉献网络科技，进而缩短人与人之间沟通的距离，提升政府、企业的形象，为客户创造价值为自身的社会使命，以提供各种线上解决方案为中心开展业务工作。为人们提供便捷的网络平台服务。</span><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><span style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\">&nbsp;我们从市场的角度和客户的需求出发，帮助企业及其产品树立良好的视觉形象，拓展市场空间创造竞争优势，提升企业的无形资产。 降低企业沟通和人工成本。</span><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><span style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\">&nbsp;我们亦明知时代赋予“寻居汇”的伟大抱负和责任，需以前瞻性的眼光和精致清准的服务引导社会，提升民众的审美品味和生活品质，这也是移动互联网在社会进程中的根本功能所在。</span><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><span style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\">&nbsp;合作母公司介绍：苏州市汇盈广告传媒有限公司。苏州市汇盈广告传媒有限公司是“寻居汇”的战略合作伙伴，拥有与“寻居汇”一样的企业发展愿景。公司位于美丽的苏州古城，是一家专业从事品牌形象设计、品牌营销策划、户外广告设计，各类印刷制作的专业化公司，拥有自己的印刷制作工厂，团队各类人才近80多位，也是唯一一家与昆山当地公安合作的公益广告发布单位。</span><br>",
+        "img_source": "attach_file/1523245262668.png",
+        "region": "苏州市",
+        "Longitude": 31.3225538729,
+        "is_delete": false
+      },
+      {
+        "address": "江苏省苏州市昆山市萧林西路108号",
+        "province": "江苏省",
+        "create_time": "2018-03-26 16:43:13",
+        "name": "罗马假日城南部",
+        "county": "昆山市",
+        "Latitude": 120.6134033203,
+        "id": 91,
+        "describe": "本小区位于xxx位置，毗邻xxx,有着天然的优势",
+        "img_source": null,
+        "region": "苏州市",
+        "Longitude": 31.3225538729,
+        "is_delete": false
+      },
+      {
+        "address": "徐汇区南京路",
+        "province": "江苏省",
+        "create_time": "2018-03-26 17:17:41",
+        "name": "中凯城市之光",
+        "county": "昆山市",
+        "Latitude": 120.6134033203,
+        "id": 92,
+        "describe": "<div class=\"para\" label-module=\"para\" style=\"font-size: 14px; word-wrap: break-word; color: rgb(51, 51, 51); margin-bottom: 15px; text-indent: 2em; line-height: 24px; zoom: 1; font-family: arial, 宋体, sans-serif;\">小区的智能化程度较高，采用远程控制系统，配套有大型中央空调，集中供热水，净水。　在社区规划方面融入了众多高新技术，包括8000平米生态景观湖，全区冰蓄冷全空气式<a target=\"_blank\" href=\"https://baike.baidu.com/item/%E4%B8%AD%E5%A4%AE%E7%A9%BA%E8%B0%83%E7%B3%BB%E7%BB%9F/1271837\" data-lemmaid=\"1271837\" style=\"color: rgb(19, 110, 194);\">中央空调系统</a>，新型节能<a target=\"_blank\" href=\"https://baike.baidu.com/item/%E4%B8%AD%E6%B0%B4%E5%9B%9E%E7%94%A8%E7%B3%BB%E7%BB%9F/1362826\" data-lemmaid=\"1362826\" style=\"color: rgb(19, 110, 194);\">中水回用系统</a>，内外保温墙体材料，<a target=\"_blank\" href=\"https://baike.baidu.com/item/%E4%B8%AD%E5%A4%AE%E7%83%AD%E6%B0%B4%E7%B3%BB%E7%BB%9F/429782\" data-lemmaid=\"429782\" style=\"color: rgb(19, 110, 194);\">中央热水系统</a>，室内空调湿度控制技术，太阳节能泳池技术，<a target=\"_blank\" href=\"https://baike.baidu.com/item/%E6%99%BA%E8%83%BD%E7%9B%91%E6%8E%A7/3758758\" data-lemmaid=\"3758758\" style=\"color: rgb(19, 110, 194);\">智能监控</a>，IC卡门禁系统等多种世界先进技术，在沪上豪宅社区中如此全方位高科技的集中运用尚属罕见。</div><div class=\"para\" label-module=\"para\" style=\"font-size: 14px; word-wrap: break-word; color: rgb(51, 51, 51); margin-bottom: 15px; text-indent: 2em; line-height: 24px; zoom: 1; font-family: arial, 宋体, sans-serif;\">环境设计公司:美国DND设计机构上海建筑咨询有限公司</div><div class=\"para\" label-module=\"para\" style=\"font-size: 14px; word-wrap: break-word; color: rgb(51, 51, 51); margin-bottom: 15px; text-indent: 2em; line-height: 24px; zoom: 1; font-family: arial, 宋体, sans-serif;\">在房型上，体现真正的豪门大户气派，三房四房产品为西区“一线”产品，三房平均面积达150平方米，四房平均面积达190平方米。另外，270度全景观<a target=\"_blank\" href=\"https://baike.baidu.com/item/%E8%B7%83%E5%B1%82/4142868\" data-lemmaid=\"4142868\" style=\"color: rgb(19, 110, 194);\">跃层</a>、底层swimming--pool豪配复式、豪华版<a target=\"_blank\" href=\"https://baike.baidu.com/item/%E9%85%92%E5%BA%97%E5%BC%8F%E5%85%AC%E5%AF%93/2124972\" data-lemmaid=\"2124972\" style=\"color: rgb(19, 110, 194);\">酒店式公寓</a>等产品设计也是让众多到场嘉宾怦然心动，更有引进新型二梯一户的居家理念让人耳目一新。</div><div class=\"para\" label-module=\"para\" style=\"font-size: 14px; word-wrap: break-word; color: rgb(51, 51, 51); margin-bottom: 15px; text-indent: 2em; line-height: 24px; zoom: 1; font-family: arial, 宋体, sans-serif;\">设备装修：·FTTB+LAN（<a target=\"_blank\" href=\"https://baike.baidu.com/item/%E5%85%89%E7%BA%A4%E5%88%B0%E5%A4%A7%E6%A5%BC/5931348\" data-lemmaid=\"5931348\" style=\"color: rgb(19, 110, 194);\">光纤到大楼</a>+局域网）GCS综合布线、监控及管理中心（综合布线包括数据通讯线、电话线、电视信号线、紧急按钮线路及公共部位的监控线路）</div>",
+        "img_source": "attach_file/1522568833688.jpg",
+        "region": "苏州市",
+        "Longitude": 31.3225538729,
+        "is_delete": false
+      }
+    ]
+  },
+  "message": "请求成功",
+  "status": 1
+}
+
+
+
+
+list 格式返回：
+
+{
+  "code": 1119,
+  "data": [
+    {
+      "address": "萧林西路8号",
+      "province": "江苏省",
+      "create_time": "2018-03-26 16:20:51",
+      "name": "体验小区 ",
+      "county": "昆山市",
+      "Latitude": 120.6134033203,
+      "id": 90,
+      "describe": "<span style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\">寻居汇（苏州）网络科技有限公司通过两年的规划布局和发展，正式在江苏省市场经济国际化领先的昆山市核准成立。在这座富有活力的城市结合当地资源，开启“寻居汇”智慧城市创新之路。</span><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><span style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\">&nbsp;寻居汇（苏州）网络科技有限公司是由一批具有网络公司服务背景的网络精英组建而成，拥有专业的销售、设计、技术与服务团队，是一家专业从事智慧城市和智慧社区综合移动互联软件开发、互联社群商业模式整合等全方位服务的网络科技公司。</span><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><span style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\">&nbsp;我们全心致力于企事业单位、公共事业单位、物业、工厂、商家、百姓等智慧网络平台搭建和运营。行业涉及地方物业、政府机关、企事业单位，制造业、商企用户等等。</span><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><span style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\">&nbsp;我们以奉献网络科技，进而缩短人与人之间沟通的距离，提升政府、企业的形象，为客户创造价值为自身的社会使命，以提供各种线上解决方案为中心开展业务工作。为人们提供便捷的网络平台服务。</span><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><span style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\">&nbsp;我们从市场的角度和客户的需求出发，帮助企业及其产品树立良好的视觉形象，拓展市场空间创造竞争优势，提升企业的无形资产。 降低企业沟通和人工成本。</span><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><span style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\">&nbsp;我们亦明知时代赋予“寻居汇”的伟大抱负和责任，需以前瞻性的眼光和精致清准的服务引导社会，提升民众的审美品味和生活品质，这也是移动互联网在社会进程中的根本功能所在。</span><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><br style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\"><span style=\"color: rgb(102, 102, 102); font-family: &quot;Microsoft YaHei&quot;, Helvetica, Tahoma; font-size: 14px; text-indent: 28px; white-space: pre-wrap;\">&nbsp;合作母公司介绍：苏州市汇盈广告传媒有限公司。苏州市汇盈广告传媒有限公司是“寻居汇”的战略合作伙伴，拥有与“寻居汇”一样的企业发展愿景。公司位于美丽的苏州古城，是一家专业从事品牌形象设计、品牌营销策划、户外广告设计，各类印刷制作的专业化公司，拥有自己的印刷制作工厂，团队各类人才近80多位，也是唯一一家与昆山当地公安合作的公益广告发布单位。</span><br>",
+      "img_source": "attach_file/1523245262668.png",
+      "region": "苏州市",
+      "Longitude": 31.3225538729,
+      "is_delete": false
+    },
+    {
+      "address": "江苏省苏州市昆山市萧林西路108号",
+      "province": "江苏省",
+      "create_time": "2018-03-26 16:43:13",
+      "name": "罗马假日城南部",
+      "county": "昆山市",
+      "Latitude": 120.6134033203,
+      "id": 91,
+      "describe": "本小区位于xxx位置，毗邻xxx,有着天然的优势",
+      "img_source": null,
+      "region": "苏州市",
+      "Longitude": 31.3225538729,
+      "is_delete": false
+    },
+    {
+      "address": "徐汇区南京路",
+      "province": "江苏省",
+      "create_time": "2018-03-26 17:17:41",
+      "name": "中凯城市之光",
+      "county": "昆山市",
+      "Latitude": 120.6134033203,
+      "id": 92,
+      "describe": "<div class=\"para\" label-module=\"para\" style=\"font-size: 14px; word-wrap: break-word; color: rgb(51, 51, 51); margin-bottom: 15px; text-indent: 2em; line-height: 24px; zoom: 1; font-family: arial, 宋体, sans-serif;\">小区的智能化程度较高，采用远程控制系统，配套有大型中央空调，集中供热水，净水。　在社区规划方面融入了众多高新技术，包括8000平米生态景观湖，全区冰蓄冷全空气式<a target=\"_blank\" href=\"https://baike.baidu.com/item/%E4%B8%AD%E5%A4%AE%E7%A9%BA%E8%B0%83%E7%B3%BB%E7%BB%9F/1271837\" data-lemmaid=\"1271837\" style=\"color: rgb(19, 110, 194);\">中央空调系统</a>，新型节能<a target=\"_blank\" href=\"https://baike.baidu.com/item/%E4%B8%AD%E6%B0%B4%E5%9B%9E%E7%94%A8%E7%B3%BB%E7%BB%9F/1362826\" data-lemmaid=\"1362826\" style=\"color: rgb(19, 110, 194);\">中水回用系统</a>，内外保温墙体材料，<a target=\"_blank\" href=\"https://baike.baidu.com/item/%E4%B8%AD%E5%A4%AE%E7%83%AD%E6%B0%B4%E7%B3%BB%E7%BB%9F/429782\" data-lemmaid=\"429782\" style=\"color: rgb(19, 110, 194);\">中央热水系统</a>，室内空调湿度控制技术，太阳节能泳池技术，<a target=\"_blank\" href=\"https://baike.baidu.com/item/%E6%99%BA%E8%83%BD%E7%9B%91%E6%8E%A7/3758758\" data-lemmaid=\"3758758\" style=\"color: rgb(19, 110, 194);\">智能监控</a>，IC卡门禁系统等多种世界先进技术，在沪上豪宅社区中如此全方位高科技的集中运用尚属罕见。</div><div class=\"para\" label-module=\"para\" style=\"font-size: 14px; word-wrap: break-word; color: rgb(51, 51, 51); margin-bottom: 15px; text-indent: 2em; line-height: 24px; zoom: 1; font-family: arial, 宋体, sans-serif;\">环境设计公司:美国DND设计机构上海建筑咨询有限公司</div><div class=\"para\" label-module=\"para\" style=\"font-size: 14px; word-wrap: break-word; color: rgb(51, 51, 51); margin-bottom: 15px; text-indent: 2em; line-height: 24px; zoom: 1; font-family: arial, 宋体, sans-serif;\">在房型上，体现真正的豪门大户气派，三房四房产品为西区“一线”产品，三房平均面积达150平方米，四房平均面积达190平方米。另外，270度全景观<a target=\"_blank\" href=\"https://baike.baidu.com/item/%E8%B7%83%E5%B1%82/4142868\" data-lemmaid=\"4142868\" style=\"color: rgb(19, 110, 194);\">跃层</a>、底层swimming--pool豪配复式、豪华版<a target=\"_blank\" href=\"https://baike.baidu.com/item/%E9%85%92%E5%BA%97%E5%BC%8F%E5%85%AC%E5%AF%93/2124972\" data-lemmaid=\"2124972\" style=\"color: rgb(19, 110, 194);\">酒店式公寓</a>等产品设计也是让众多到场嘉宾怦然心动，更有引进新型二梯一户的居家理念让人耳目一新。</div><div class=\"para\" label-module=\"para\" style=\"font-size: 14px; word-wrap: break-word; color: rgb(51, 51, 51); margin-bottom: 15px; text-indent: 2em; line-height: 24px; zoom: 1; font-family: arial, 宋体, sans-serif;\">设备装修：·FTTB+LAN（<a target=\"_blank\" href=\"https://baike.baidu.com/item/%E5%85%89%E7%BA%A4%E5%88%B0%E5%A4%A7%E6%A5%BC/5931348\" data-lemmaid=\"5931348\" style=\"color: rgb(19, 110, 194);\">光纤到大楼</a>+局域网）GCS综合布线、监控及管理中心（综合布线包括数据通讯线、电话线、电视信号线、紧急按钮线路及公共部位的监控线路）</div>",
+      "img_source": "attach_file/1522568833688.jpg",
+      "region": "苏州市",
+      "Longitude": 31.3225538729,
+      "is_delete": false
+    },
+    {
+      "address": "萧林西路188号",
+      "province": "江苏省",
+      "create_time": "2018-03-26 17:40:04",
+      "name": "寻居汇小区",
+      "county": "昆山市",
+      "Latitude": 120.6134033203,
+      "id": 93,
+      "describe": "<span style=\"color: rgb(51, 51, 51); font-family: arial, 宋体, sans-serif; font-size: 14px; text-indent: 28px;\">小区内部环境典雅幽静，绿化多，通过小区道路的合理组织，休闲设施的精心安排，提供自然、舒适的居住环境。周边配套齐全，设施完备，物业管理完善，保安24小时值班，住户素质高。社区主流健康向上，社区风气良好，邻里关系和谐。基础设施健全，周围商圈多，购物，就医，娱乐等方便快捷。为一个集生态环境、人文环境、信息化和管理控制自动化等优质服务为一体的高档个性化住宅小区。环境优美，丽水成天的风景给予了回归家庭、回归私域的生活体验。房屋楼层分布均匀，室内装修豪华气派，视眼非常宽广，采光较好。坐北朝南，整体体现现代简..</span><div><img src=\"https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1522067264269&amp;di=9d8f2e31d4a01578474a47996359da0b&amp;imgtype=0&amp;src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fa50f4bfbfbedab647e190815f036afc378311eff.jpg\"><span style=\"color: rgb(51, 51, 51); font-family: arial, 宋体, sans-serif; font-size: 14px; text-indent: 28px;\"><br></span></div>",
+      "img_source": "attach_file/1522753555268.jpg",
+      "region": "苏州市",
+      "Longitude": 31.3225538729,
+      "is_delete": false
+    },
+    {
+      "address": "花园路1888号",
+      "province": "江苏省",
+      "create_time": "2018-03-31 07:22:42",
+      "name": "蓝宝世家",
+      "county": "昆山市",
+      "Latitude": 120.6134033203,
+      "id": 94,
+      "describe": "<span style=\"color: rgb(102, 102, 102); font-family: arial, helvetica, clean, sans-serif; font-size: 14px;\">总体设计从“古书”《诗经》中提取其形与魂之精华用于景观，以“风 雅 颂”为三大主题作整区的布局，提炼国学的精髓元素，传承汉唐遗韵。赋以中式框景、障景、抑景、借景、对景、漏景、夹景、添景等造园手法，主基调以咖色，木色，青灰色为主，点缀黑色、深红色、红铜、金等，呈现出富有汉唐风韵气质端庄的新中式大宅景观。带给人们一个舒适的环境，并能够适应现代人们的生活模式，展现一种文化底蕴，并提升了</span><a href=\"http://www.yijiangshan.cn/xiaoqujingguansheji.shtml\" style=\"color: rgb(102, 102, 102); font-family: arial, helvetica, clean, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);\"><strong>小区景观设计</strong></a><span style=\"color: rgb(102, 102, 102); font-family: arial, helvetica, clean, sans-serif; font-size: 14px;\">价值。</span>",
+      "img_source": "attach_file/1524207081811.jpg",
+      "region": "苏州市",
+      "Longitude": 31.3225538729,
+      "is_delete": false
+    },
+    {
+      "address": "阳光路300号",
+      "province": "江苏省",
+      "create_time": "2018-04-03 13:51:39",
+      "name": "阳光花园",
+      "county": "昆山市",
+      "Latitude": 120.6134033203,
+      "id": 97,
+      "describe": "一个充满阳光的新兴小区",
+      "img_source": null,
+      "region": "苏州市",
+      "Longitude": 31.3225538729,
+      "is_delete": false
+    },
+    {
+      "address": "江苏省苏州市昆山市萧林西路8号",
+      "province": "江苏省",
+      "create_time": "2018-04-19 16:29:06",
+      "name": "爱上家小区",
+      "county": "昆山市",
+      "Latitude": 120.6134033203,
+      "id": 99,
+      "describe": "<span style=\"color: rgb(51, 51, 51); font-family: arial, 宋体, sans-serif; font-size: 14px; text-indent: 28px;\">小区内部环境典雅幽静，绿化多，通过小区道路的合理组织，休闲设施的精心安排，提供自然、舒适的居住环境。周边配套齐全，设施完备，物业管理完善，保安24小时值班，住户素质高。社区主流健康向上，社区风气良好，邻里关系和谐。基础设施健全，周围商圈多，购物，就医，娱乐等方便快捷。为一个集生态环境、人文环境、信息化和管理控制自动化等优质服务为一体的高档个性化住宅小区。环境优美，丽水成天的风景给予了回归家庭、回归私域的生活体验。房屋楼层分布均匀，室内装修豪华气派，视眼非常宽广，采光较好。坐北朝南，整体体现现代简..</span>",
+      "img_source": "attach_file/1524306566191.jpg",
+      "region": "苏州市",
+      "Longitude": 31.3225538729,
+      "is_delete": false
+    },
+    {
+      "address": "江苏省南通市朝阳路",
+      "province": "江苏省",
+      "create_time": "2018-04-22 14:53:51",
+      "name": "中通花园",
+      "county": "昆山市",
+      "Latitude": 120.6134033203,
+      "id": 104,
+      "describe": "啊速度快拉速度可拉伸",
+      "img_source": "attach_file/1524380319906.jpg",
+      "region": "苏州市",
+      "Longitude": 31.3225538729,
+      "is_delete": false
+    },
+    {
+      "address": "城北萧林路471号",
+      "province": "江苏省",
+      "create_time": "2018-05-21 09:38:34",
+      "name": "月盛花园",
+      "county": "昆山市",
+      "Latitude": 120.6134033203,
+      "id": 105,
+      "describe": "<div>我司坐落在昆山市柏庐城市管理办事处紫竹社区（萧林路471号，九方城对面），公司管理人员稳定，大部分的管理人员是我公司成立之初的入司人员（2014年初成立昆山新君安物业管理有限公司），多年的工作、培训和自己的努力已经形成一支经验丰富的物业管理队伍。<br></div><div>在物业管理服务中，本公司所辖的各小区业主所遇到的每一件难事、烦心事，不管事情的大小我们都认真对待，妥善处理。对业主涉及维修方面的求助，公司的工程人员随叫随到，达到业主满意为止。</div><div>&nbsp;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;昆山新君安物业管理有限公司</div>",
+      "img_source": null,
+      "region": "苏州市",
+      "Longitude": 31.3225538729,
+      "is_delete": false
+    },
+    {
+      "address": "城北萧林路471号",
+      "province": "江苏省",
+      "create_time": "2018-05-21 10:02:21",
+      "name": "银都花园",
+      "county": "昆山市",
+      "Latitude": 120.6134033203,
+      "id": 106,
+      "describe": "<div>我司坐落在昆山市柏庐城市管理办事处紫竹社区（萧林路471号，九方城对面），公司管理人员稳定，大部分的管理人员是我公司成立之初的入司人员（2014年初成立昆山新君安物业管理有限公司），多年的工作、培训和自己的努力已经形成一支经验丰富的物业管理队伍。</div><div>在物业管理服务中，本公司所辖的各小区业主所遇到的每一件难事、烦心事，不管事情的大小我们都认真对待，妥善处理。对业主涉及维修方面的求助，公司的工程人员随叫随到，达到业主满意为止。</div><div>&nbsp;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 昆山新君安物业管理有限公司</div>",
+      "img_source": null,
+      "region": "苏州市",
+      "Longitude": 31.3225538729,
+      "is_delete": false
+    }
+  ],
+  "length": 10,
+  "page": null,
+  "message": "请求成功",
+  "status": 1
+}
+one格式：
+
+
+
+
+
+{
+  "code": 1119,
+  "data": [
+    {
+      "address": "城北萧林路471号",
+      "province": "江苏省",
+      "create_time": "2018-05-21 10:02:21",
+      "name": "银都花园",
+      "county": "昆山市",
+      "Latitude": 120.6134033203,
+      "id": 106,
+      "describe": "<div>我司坐落在昆山市柏庐城市管理办事处紫竹社区（萧林路471号，九方城对面），公司管理人员稳定，大部分的管理人员是我公司成立之初的入司人员（2014年初成立昆山新君安物业管理有限公司），多年的工作、培训和自己的努力已经形成一支经验丰富的物业管理队伍。</div><div>在物业管理服务中，本公司所辖的各小区业主所遇到的每一件难事、烦心事，不管事情的大小我们都认真对待，妥善处理。对业主涉及维修方面的求助，公司的工程人员随叫随到，达到业主满意为止。</div><div>&nbsp;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 昆山新君安物业管理有限公司</div>",
+      "img_source": null,
+      "region": "苏州市",
+      "Longitude": 31.3225538729,
+      "is_delete": false
+    }
+  ],
+  "length": 1,
+  "page": null,
+  "message": "请求成功",
+  "status": 1
+}
+
+ 
+

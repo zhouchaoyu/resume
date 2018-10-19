@@ -1,0 +1,154 @@
+请求方法：post
+请求路径： EntranceGuard/plot/queryDevices
+请求参数： 
+	必须参数： 
+	
+		format ： //请求参数的格式
+			list ： 格式是one 或者list数据包将封装在data数据域
+			
+			page ：格式是page 将封装在page数据域
+			
+			one  ： 精确搜索 数据将封装在data域返回匹配到的单条数据
+		
+		
+	
+	变量参数：	
+	pageNo：页码数   （当format 参数设定为page时必须）
+	pageRow：一页的数据长度  （当format 参数设定为page时必须）
+	plotname： 小区名    
+	state：设备状态
+	·/**已注册***/
+	signined(101,"已注册"),
+	/***已启用****/
+	started(102,"已启用"),
+	/***故障****/
+	fault(103,"故障"),
+	/***已废弃****/
+	abandoned(104,"已废弃"),
+	/***已停用****/
+	stoped(105,"已停用"),
+	/***已关联****/
+	related(106,"已关联");
+		
+
+
+
+page 格式返回：
+{
+  "code": 1119,
+  "data": null,
+  "length": 0,
+  "page": {
+    "totalpage": 2,
+    "pageRow": 2,
+    "dataRow": 4,
+    "pageNo": 1,
+    "pagedata": [
+      {
+        "no": "ADS-000006",
+        "prot": 0,
+        "pixels": 0,
+        "ip": "0.0.0.0.0.0",
+        "part": 0,
+        "id": 7,
+        "state": 101,
+        "type": "1101-1102",
+        "communication": 5
+      },
+      {
+        "no": "ADS-000001",
+        "prot": 0,
+        "pixels": 0,
+        "ip": "0.0.0.0.0.0",
+        "part": 0,
+        "id": 1,
+        "state": 101,
+        "type": "101",
+        "communication": 5
+      }
+    ]
+  },
+  "message": "请求成功",
+  "status": 1
+}
+
+
+
+
+list 格式
+{
+  "code": 1119,
+  "data": [
+    {
+      "no": "ADS-000006",
+      "prot": 0,
+      "pixels": 0,
+      "ip": "0.0.0.0.0.0",
+      "part": 0,
+      "id": 7,
+      "state": 101,
+      "type": "1101-1102",
+      "communication": 5
+    },
+    {
+      "no": "ADS-000001",
+      "prot": 0,
+      "pixels": 0,
+      "ip": "0.0.0.0.0.0",
+      "part": 0,
+      "id": 1,
+      "state": 101,
+      "type": "101",
+      "communication": 5
+    },
+    {
+      "no": "ADS-000002",
+      "prot": 52956,
+      "pixels": 0,
+      "ip": "0:0:0:0:0:0:0:1",
+      "part": 0,
+      "id": 5,
+      "state": 103,
+      "type": "102",
+      "communication": 3
+    },
+    {
+      "no": "ADS-000005",
+      "prot": 58207,
+      "pixels": 0,
+      "ip": "0:0:0:0:0:0:0:1",
+      "part": 0,
+      "id": 6,
+      "state": 102,
+      "type": "1101-1102",
+      "communication": 3
+    }
+  ],
+  "length": 4,
+  "page": null,
+  "message": "请求成功",
+  "status": 1
+}
+输入小区名称查到相关设备
+{
+  "code": 1119,
+  "data": [
+    {
+      "no": "ADS-000006",
+      "prot": 0,
+      "pixels": 0,
+      "ip": "0.0.0.0.0.0",
+      "part": 0,
+      "id": 7,
+      "state": 101,
+      "type": "1101-1102",
+      "communication": 5
+    }
+  ],
+  "length": 1,
+  "page": null,
+  "message": "请求成功",
+  "status": 1
+}
+
+

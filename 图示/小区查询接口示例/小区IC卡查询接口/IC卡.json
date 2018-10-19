@@ -1,0 +1,45 @@
+请求方法： post
+必须参数： format 
+可变参数：    
+		plotname ：小区名称
+		
+		
+		
+list格式
+{
+  "code": 1119,
+  "data": [
+    {
+      "no": "ABS-1111",
+      "id": 1,
+      "master_name": "小宇",
+      "plot_id": 106
+    }
+  ],
+  "length": 1,
+  "page": null,
+  "message": "请求成功",
+  "status": 1
+}
+page 格式：
+{
+  "code": 1119,
+  "data": null,
+  "length": 0,
+  "page": {
+    "totalpage": 1,
+    "pageRow": 3,
+    "dataRow": 1,
+    "pageNo": 1,
+    "pagedata": [
+      {
+        "no": "ABS-1111",
+        "id": 1,
+        "master_name": "小宇",
+        "plot_id": 106
+      }
+    ]
+  },
+  "message": "请求成功",
+  "status": 1
+}
